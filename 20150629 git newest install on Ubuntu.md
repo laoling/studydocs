@@ -28,6 +28,8 @@
 
 	apt-get install asciidoc xmlto
 
+这里安装asciidoc时，相关依赖会安装TeXLive完整版本，要大几百M的安装。很慢。
+
 ### 通过git命令克隆最新git库
 
 	git clone https://github.com/git/git
@@ -35,9 +37,13 @@
 ### git文件夹中编译安装
 
 	cd git
-	make prefix=/usr/local all doc
-	make prefix=/usr/local install install-doc install-html
+	make prefix=/usr all doc
+	make prefix=/usr install install-doc install-html
 
+查看最新版本
 
+>git version 2.5.0.rc0.3.g912bd49
 
+到这里我们就将git安装成功了，接下来就可以进行git的其他操作了。
 
+author：老零[https://github.com/laoling]
