@@ -20,4 +20,6 @@ studydocs
 
 * 20150612 CSS Custom Chinese Web Fonts.md
 
-#####2015.06.14 21:54今天没有更新，只能简单充数了
+#####2015.06.30 11:30 添加下列文档
+
+* 20150629 git newest install on Ubuntu.md
