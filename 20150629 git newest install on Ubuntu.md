@@ -50,15 +50,16 @@
 
 进入root下我们下载官网源码包（最新稳定版本）
 
-	wget https://nodejs.org/dist/v0.12.5/node-v0.12.5-linux-x86.tar.gz
+	wget https://nodejs.org/dist/v0.12.6/node-v0.12.6-linux-x86.tar.gz
 
 下载完成解压
 
-	tar -zxvf node-v0.12.5-linux-x86.tar.gz
+	tar -zxvf node-v0.12.6-linux-x86.tar.gz
 
 接下来进入源码目录编译安装
 
-	cd node-v0.12.5
+	cd node-v0.12.6
+	./configure  //检查编译，实际上依赖安装后此项可略过
 	make
 	make install
 
@@ -66,6 +67,8 @@
 
 	ln -s usr/local/bin/node /usr/bin/node
 	ln -s usr/local/bin/npm /usr/bin/npm
+
+一般情况下，$PATH中已写入usr/local/bin,但有时系统依然不可识别，就需要进行软链接添加。
 
 npm添加n模块可以管理node版本
 
@@ -83,7 +86,7 @@ npm我们这里安装下前端项目自动化套件yeoman，包含yo（脚手架
 
 	/usr/local/lib
 	├── n@1.3.0
-	└─┬ npm@2.11.2
+	└─┬ npm@2.12.1
 	  ├── abbrev@1.0.7
 	  ├── ansi@0.3.0
 	  ├── ansi-regex@1.1.1
@@ -255,4 +258,5 @@ npm我们这里安装下前端项目自动化套件yeoman，包含yo（脚手架
 	  ├── wrappy@1.0.1
 	  └── write-file-atomic@1.1.2
 
-author：老零[https://github.com/laoling]
+* author：老零[https://github.com/laoling]
+* time: 2015.07.09再次编辑
